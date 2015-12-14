@@ -16,6 +16,6 @@ COPY docker.init/ /docker.init
 RUN find /docker.init -type f -name '*.sh' -exec chmod o+x {} \; \
     && mkdir -p /data/logs
 
-COPY  demo.war /data/demo.war
+COPY  target/demo.war /data/demo.war
 
 CMD ["/docker.init/start.sh"]
