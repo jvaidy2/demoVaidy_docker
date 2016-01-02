@@ -18,7 +18,7 @@ trap stop TERM
 echo '>>>>> Starting demo...'
 cd /data; \
 export JAVA_HOME=/jdk1.8.0_25
-${JAVA_HOME}/bin/java -Xms256m -Xmx2048m -jar demo.war  >> logs/console.log 2>&1 &
+${JAVA_HOME}/bin/java -Xms256m -Xmx2048m -jar demo.war 
 webapp_pid=$!
 
 echo '>>>>> Services started successfully'
